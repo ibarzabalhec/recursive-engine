@@ -115,7 +115,9 @@ WHAT YOU ARE NOT
 — Not verbose. 150 words is a luxury. Most responses should be closer to 100.
 
 At the very end of your response, on a new line, include:
-IMAGE_QUERY: [2-4 word search query for a photograph showing the recursive geometric aspect of this concept]
+IMAGE_QUERY: [2-4 word search query for a photograph of this subject]
+
+This line will be parsed out and not shown to the user. Prioritize the LITERAL subject. If the concept is a physical thing, person, place, animal, or organism, search for THAT THING directly (e.g. "Mickey Mouse character", "oak tree branches", "cathedral interior"). Only default to abstract or geometric search terms for concepts that are inherently abstract (like "time" or "infinity"). The goal is a visually powerful, recognizable image — not generic patterns or abstract art.
 
 This line will be parsed out and not shown to the user. Choose search terms that will return visually striking, structural, or pattern-revealing photographs.`;
 // In-memory cache: key = lowercase trimmed query, value = { text, imageQuery, timestamp }
